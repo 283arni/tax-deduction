@@ -1,0 +1,11 @@
+@value colors: "../../styles/var.module.scss";
+@value gradient-coral from colors;
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: gradient-coral;
+}
+
+/*# sourceMappingURL=App.module.css.map */

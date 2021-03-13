@@ -1,0 +1,67 @@
+@value colors: '../../styles/var.module.scss';
+@value color-white, color-black, color-gray-medium, gradient-coral, color-red, shadow-button from colors;
+
+.Button {
+  font-size: 16px;
+  color: color-white;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: transparent;
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
+.Button__start {
+  border: 1px solid color-white;
+  padding: 18px 31px;
+  background: transparent;
+  transition: 0.3s;
+  letter-spacing: 0.02em;
+
+  @media (max-width: 320px) {
+    padding: 12px 24px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: color-black;
+    background: color-white;
+  }
+
+  &:disabled {
+    background: color-gray-medium;
+    border-color: transparent;
+    color: color-white;
+  }
+}
+
+.Button__add {
+  background: gradient-coral;
+  border: transparent;
+  padding: 19px 0;
+  text-align: center;
+  min-width: 100%;
+  box-shadow: 0 0 24px shadow-button;
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: color-red;
+  }
+
+  &:disabled {
+    background: color-gray-medium;
+    box-shadow: none;
+
+  }
+}
+
+

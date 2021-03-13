@@ -1,0 +1,49 @@
+@value colors: "../../styles/var.module.scss";
+@value color-white, gradient-coral, color-gray-tag, color-red, color-gray-light from colors;
+.Tags {
+  margin-bottom: 40px;
+}
+.Tags span {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 32px;
+}
+@media (max-width: 320px) {
+  .Tags span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+.Tags input {
+  display: none;
+}
+.Tags label {
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 50px;
+  border: transparent;
+  background: color-gray-tag;
+  margin-right: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 320px) {
+  .Tags label {
+    margin-right: 8px;
+  }
+}
+.Tags input:checked + label {
+  color: color-white;
+  background: gradient-coral;
+}
+.Tags input:not(:checked) + label:hover {
+  background: color-gray-light;
+}
+.Tags input:not(:checked) + label:active {
+  color: color-white;
+  background: gradient-coral;
+}
+
+/*# sourceMappingURL=Tags.module.css.map */

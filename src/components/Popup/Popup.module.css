@@ -1,0 +1,137 @@
+@value colors: "../../styles/var.module.scss";
+@value popup-overlay, color-gray, color-gray-light, color-gray-medium, color-white, gradient-coral, color-gray-btn, color-red, color-black, color-orange from colors;
+.Popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: color-gray-medium;
+}
+@media (max-width: 768px) {
+  .Popup {
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+}
+@media (max-width: 320px) {
+  .Popup {
+    padding-top: 0;
+  }
+}
+
+.Popup__container {
+  max-width: 552px;
+  padding: 32px;
+  position: relative;
+  background: color-white;
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .Popup__container {
+    max-width: 453px;
+  }
+}
+@media (max-width: 320px) {
+  .Popup__container {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.Popup__container h1 {
+  margin: 8px 0 20px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+@media (max-width: 320px) {
+  .Popup__container h1 {
+    margin: 10px 0 18px 0;
+    font-size: 18px;
+  }
+}
+.Popup__container p {
+  width: 90%;
+  margin: 0 0 28px 0;
+  font-size: 14px;
+  color: color-gray;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .Popup__container p {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .Popup__container p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.Popup__calculate {
+  margin-bottom: 24px;
+}
+@media (max-width: 320px) {
+  .Popup__calculate {
+    margin-bottom: 18px;
+  }
+}
+.Popup__calculate label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media (max-width: 320px) {
+  .Popup__calculate label {
+    margin-bottom: 12px;
+  }
+}
+.Popup__calculate input {
+  border: 1px solid color-gray-light;
+  min-width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  outline: none;
+}
+.Popup__calculate input:hover {
+  border-color: color-black;
+}
+.Popup__calculate input:focus {
+  border-color: color-gray-light;
+}
+.Popup__calculate input:disabled {
+  border-color: color-gray;
+  color: color-gray;
+}
+.Popup__calculate input::placeholder {
+  color: color-gray-medium;
+}
+.Popup__calculate button {
+  padding: 0;
+  font-weight: 500;
+  color: color-red;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.Popup__calculate button:hover {
+  color: color-orange;
+}
+.Popup__calculate button:active {
+  color: color-red;
+}
+
+/*# sourceMappingURL=Popup.module.css.map */

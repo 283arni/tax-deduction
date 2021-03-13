@@ -1,0 +1,60 @@
+@value colors: '../../styles/var.module.scss';
+@value color-gray-light, gradient-coral, color-gray, color-black, color-gray-medium from colors;
+
+.Tax {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid color-gray-light;
+  font-size: 14px;
+
+  > span {
+    span {
+      color: color-gray;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid color-gray-light;
+    transition: 0.3s;
+    margin-right: 11px;
+    outline: none;
+
+    svg {
+      display: none;
+    }
+
+    &:hover {
+      border-color: color-black;
+    }
+  }
+
+  input:checked + label {
+    background: gradient-coral;
+    border-color: transparent;
+
+    svg {
+      display: block;
+    }
+  }
+
+  input:disabled + label {
+    background: color-gray-medium;
+    border-color: transparent;
+
+    svg {
+      display: block;
+    }
+  }
+}

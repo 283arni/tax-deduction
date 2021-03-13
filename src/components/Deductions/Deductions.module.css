@@ -1,0 +1,30 @@
+.Deductions {
+  margin-bottom: 20px;
+}
+@media (max-width: 320px) {
+  .Deductions {
+    margin-bottom: 30px;
+  }
+}
+.Deductions > div {
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 320px) {
+  .Deductions > div {
+    width: 60%;
+    line-height: 24px;
+  }
+}
+.Deductions ul {
+  list-style: none;
+  padding: 0;
+  margin: 3px 0 0 0;
+}
+@media (max-width: 320px) {
+  .Deductions ul {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=Deductions.module.css.map */

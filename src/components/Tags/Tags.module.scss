@@ -1,0 +1,52 @@
+@value colors: '../../styles/var.module.scss';
+@value color-white, gradient-coral, color-gray-tag, color-red, color-gray-light from colors;
+
+.Tags {
+  margin-bottom: 40px;
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 32px;
+
+    @media (max-width: 320px) {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 50px;
+    border: transparent;
+    background: color-gray-tag;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @media (max-width: 320px) {
+      margin-right: 8px;
+    }
+  }
+
+  input:checked + label {
+    color: color-white;
+    background: gradient-coral;
+  }
+
+  input:not(:checked) + label:hover {
+    background: color-gray-light;
+  }
+
+  input:not(:checked) + label:active {
+    color: color-white;
+    background: gradient-coral;
+  }
+}
