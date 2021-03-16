@@ -2,9 +2,10 @@
 @value gradient-coral from colors;
 .App {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: gradient-coral;
 }
 

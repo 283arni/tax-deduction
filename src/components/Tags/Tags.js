@@ -1,16 +1,7 @@
 import classes from "./Tags.module.scss";
 import Tag from "../Tag/Tag";
+import {tags} from "../../data";
 
-const tags = [
-  {
-    id: "pay",
-    text: "Платеж"
-  },
-  {
-    id: "time",
-    text: "Срок"
-  },
-]
 
 const Tags = () => {
   return (

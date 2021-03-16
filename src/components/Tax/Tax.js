@@ -1,14 +1,22 @@
+import {useState} from 'react';
 import classes from './Tax.module.scss';
 import {ReactComponent as CheckIcon} from '../../check.svg'
+import {choiceEnding} from "../../utils";
 
-const Tax = ({id}) => {
+const Tax = ({item, index}) => {
+  const [isCheck, setIsCheck] = useState(true)
+
+  const handleCheckboxClick = () => {
+    setIsCheck(!isCheck)
+  }
+
   return (
     <li className={classes.Tax}>
-      <input type="checkbox" id={`checkbox-${id}`}/>
-      <label htmlFor={`checkbox-${id}`} tabIndex={0}>
+      <input type="checkbox" id={`checkbox-${index}`} onChange={() => handleCheckboxClick()} checked={isCheck}/>
+      <label htmlFor={`checkbox-${index}`} tabIndex={0}>
         <CheckIcon width="14" height="11"/>
       </label>
-      <span>78 000 рублей <span>в 1-ый год</span></span>
+      <span>{`${item} рублей`} <span>{choiceEnding(index + 1)}</span></span>
     </li>
   )
 }

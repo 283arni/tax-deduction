@@ -4,11 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  min-height: 100%;
   background: color-gray-medium;
 }
 @media (max-width: 768px) {
@@ -75,63 +75,6 @@
     font-size: 12px;
     line-height: 16px;
   }
-}
-
-.Popup__calculate {
-  margin-bottom: 24px;
-}
-@media (max-width: 320px) {
-  .Popup__calculate {
-    margin-bottom: 18px;
-  }
-}
-.Popup__calculate label {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-@media (max-width: 320px) {
-  .Popup__calculate label {
-    margin-bottom: 12px;
-  }
-}
-.Popup__calculate input {
-  border: 1px solid color-gray-light;
-  min-width: 100%;
-  padding: 10px;
-  border-radius: 3px;
-  margin-bottom: 12px;
-  outline: none;
-}
-.Popup__calculate input:hover {
-  border-color: color-black;
-}
-.Popup__calculate input:focus {
-  border-color: color-gray-light;
-}
-.Popup__calculate input:disabled {
-  border-color: color-gray;
-  color: color-gray;
-}
-.Popup__calculate input::placeholder {
-  color: color-gray-medium;
-}
-.Popup__calculate button {
-  padding: 0;
-  font-weight: 500;
-  color: color-red;
-  background: transparent;
-  border: transparent;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 14px;
-}
-.Popup__calculate button:hover {
-  color: color-orange;
-}
-.Popup__calculate button:active {
-  color: color-red;
 }
 
 /*# sourceMappingURL=Popup.module.css.map */

@@ -29,6 +29,10 @@
   cursor: pointer;
   transition: 0.3s;
 }
+.Tags label:focus {
+  background: color-gray-light;
+  outline: none;
+}
 @media (max-width: 320px) {
   .Tags label {
     margin-right: 8px;

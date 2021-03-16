@@ -3,7 +3,7 @@ const Tag = ({tag}) => {
   return (
     <>
       <input type="radio" name="tag" id={tag.id}/>
-      <label htmlFor={tag.id}>{tag.text}</label>
+      <label htmlFor={tag.id} tabIndex={0}>{tag.text}</label>
     </>
   )
 }
