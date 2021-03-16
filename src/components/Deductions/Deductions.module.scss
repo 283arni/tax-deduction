@@ -1,8 +1,8 @@
 
-.Deductions {
+.deductions {
   margin-bottom: 20px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     margin-bottom: 30px;
   }
 
@@ -10,7 +10,7 @@
     font-size: 14px;
     font-weight: 500;
 
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       width: 60%;
       line-height: 24px;
     }
@@ -21,7 +21,7 @@
     padding: 0;
     margin: 3px 0 0 0;
 
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       margin-top: 0;
     }
   }

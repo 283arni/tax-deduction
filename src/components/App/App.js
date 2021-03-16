@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div className={classes.App}>
+    <div className={classes.app}>
       <Button
         text={'Налоговый вычет'}
         onTogglePopupClick={handleButtonClick}

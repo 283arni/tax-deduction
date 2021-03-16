@@ -1,15 +1,15 @@
 import classes from './Button.module.scss'
 
 const Button = ({text, onTogglePopupClick, isOpen}) => {
-  let modClass = classes.Button__start
+  let modClass = classes.button__start
 
   if (isOpen) {
-    modClass = classes.Button__add
+    modClass = classes.button__add
   }
 
   return (
     <button
-      className={`${classes.Button} ${modClass}`}
+      className={`${classes.button} ${modClass}`}
       onClick={() => onTogglePopupClick()}
     >
       {text}

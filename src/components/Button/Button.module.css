@@ -1,41 +1,41 @@
 @value colors: "../../styles/var.module.scss";
 @value color-white, color-black, color-gray-medium, gradient-coral, color-red, shadow-button from colors;
-.Button {
+.button {
   font-size: 16px;
   color: color-white;
   border-radius: 6px;
   cursor: pointer;
   outline: transparent;
 }
-@media (max-width: 320px) {
-  .Button {
+@media (max-width: 767px) {
+  .button {
     font-size: 12px;
   }
 }
 
-.Button__start {
+.button__start {
   border: 1px solid color-white;
   padding: 18px 31px;
   background: transparent;
   transition: 0.3s;
   letter-spacing: 0.02em;
 }
-@media (max-width: 320px) {
-  .Button__start {
+@media (max-width: 767px) {
+  .button__start {
     padding: 12px 24px;
   }
 }
-.Button__start:hover, .Button__start:active, .Button__start:focus {
+.button__start:hover, .button__start:active, .button__start:focus {
   color: color-black;
   background: color-white;
 }
-.Button__start:disabled {
+.button__start:disabled {
   background: color-gray-medium;
   border-color: transparent;
   color: color-white;
 }
 
-.Button__add {
+.button__add {
   background: gradient-coral;
   border: transparent;
   padding: 19px 0;
@@ -43,16 +43,16 @@
   min-width: 100%;
   box-shadow: 0 0 24px shadow-button;
 }
-@media (max-width: 320px) {
-  .Button__add {
+@media (max-width: 767px) {
+  .button__add {
     font-size: 12px;
     padding: 15px 0;
   }
 }
-.Button__add:hover, .Button__add:active, .Button__add:focus {
+.button__add:hover, .button__add:active, .button__add:focus {
   background: color-red;
 }
-.Button__add:disabled {
+.button__add:disabled {
   background: color-gray-medium;
   box-shadow: none;
 }

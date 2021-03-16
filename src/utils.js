@@ -1,5 +1,10 @@
 import {yearsPayment, yearsPaymentAnother} from "./data";
 
+export const addSpace = (salary) => {
+  return salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
+
 export const transformSalary = (salary) => {
   return parseInt(salary.split(` `).join(``).replace(`₽`,''), 10);
 }
@@ -12,7 +17,7 @@ export const changeSalary = (salary) => {
     return '';
   }
 
-  return `${salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} ₽`
+  return `${addSpace(salary)} ₽`
 };
 
 export const getTaxes = (salary) => {

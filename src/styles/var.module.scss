@@ -1,5 +1,6 @@
 // colors
 
+@value color-black: #000000;
 @value color-white: #FFFFFF;
 @value color-gray: #808080;
 @value color-gray-light: #DFE3E6;
@@ -9,8 +10,12 @@
 @value color-orange: #F53A31;
 
 // gradient
+
 @value gradient-coral: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
 
 // rgba
+
 @value shadow-button: rgba(234, 0, 41, 0.33);
+
+
 

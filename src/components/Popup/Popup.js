@@ -13,8 +13,8 @@ const Popup = ({isOpen, onTogglePopupClick}) => {
   const [isCalculate, setIsCalculate] = useState(false)
 
   return (
-    <div className={classes.Popup}>
-       <div className={classes.Popup__container}>
+    <div className={classes.popup}>
+       <div className={classes.popup__container}>
          <CloseButton
            onTogglePopupClick={onTogglePopupClick}
          />

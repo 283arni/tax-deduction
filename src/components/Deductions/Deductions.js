@@ -6,7 +6,7 @@ import {getTaxes} from "../../utils";
 const Deductions = ({salary}) => {
   const taxes = getTaxes(salary)
   return (
-    <div className={classes.Deductions}>
+    <div className={classes.deductions}>
       <div>Итого можете внести в качестве досрочных:</div>
       <ul>
         {taxes.map((item, i) => <Tax key={i} item={item} index={i}/>)}

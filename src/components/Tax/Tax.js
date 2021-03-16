@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import classes from './Tax.module.scss';
 import {ReactComponent as CheckIcon} from '../../check.svg'
-import {choiceEnding} from "../../utils";
+import {addSpace, choiceEnding} from "../../utils";
 
 const Tax = ({item, index}) => {
   const [isCheck, setIsCheck] = useState(true)
@@ -11,12 +11,12 @@ const Tax = ({item, index}) => {
   }
 
   return (
-    <li className={classes.Tax}>
+    <li className={classes.tax}>
       <input type="checkbox" id={`checkbox-${index}`} onChange={() => handleCheckboxClick()} checked={isCheck}/>
       <label htmlFor={`checkbox-${index}`} tabIndex={0}>
         <CheckIcon width="14" height="11"/>
       </label>
-      <span>{`${item} рублей`} <span>{choiceEnding(index + 1)}</span></span>
+      <span>{`${addSpace(item)} рублей`} <span>{choiceEnding(index + 1)}</span></span>
     </li>
   )
 }

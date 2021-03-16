@@ -4,7 +4,7 @@ import classes from './CloseButton.module.scss'
 const CloseButton = ({onTogglePopupClick}) => {
   return (
     <button
-      className={classes.CloseButton}
+      className={classes.closeButton}
       onClick={() => onTogglePopupClick()}
       type="button"
     >

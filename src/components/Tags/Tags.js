@@ -5,7 +5,7 @@ import {tags} from "../../data";
 
 const Tags = () => {
   return (
-    <div className={classes.Tags}>
+    <div className={classes.tags}>
       <span>Что уменьшаем?</span>
       {tags.map((item) => <Tag key={item.id} tag={item}/>)}
     </div>

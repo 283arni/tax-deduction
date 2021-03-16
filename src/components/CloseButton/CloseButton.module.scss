@@ -1,4 +1,4 @@
-.CloseButton {
+.closeButton {
   cursor: pointer;
   position: absolute;
   right: 27px;
@@ -8,11 +8,11 @@
   background: transparent;
   transition: 0.3s;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1439px) {
     right: 25px;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     top: 20px;
     right: 30px;
 

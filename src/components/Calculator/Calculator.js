@@ -34,7 +34,7 @@ const Calculator = ({setIsCalculate, setSalary, salary}) => {
 
 
   return (
-    <div className={classes.Calculator}>
+    <div className={classes.calculator}>
       <label htmlFor="salary">Ваша зарплата в месяц</label>
       <input
         className={salary.isValidated ? null : classes.error}
